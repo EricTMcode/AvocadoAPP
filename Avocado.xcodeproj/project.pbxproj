@@ -11,6 +11,7 @@
 		07F2A4662A388CB20067074C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A4652A388CB20067074C /* ContentView.swift */; };
 		07F2A4682A388CB40067074C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F2A4672A388CB40067074C /* Assets.xcassets */; };
 		07F2A46B2A388CB40067074C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F2A46A2A388CB40067074C /* Preview Assets.xcassets */; };
+		07F2A4742A388E4A0067074C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A4732A388E4A0067074C /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		07F2A4652A388CB20067074C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		07F2A4672A388CB40067074C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07F2A46A2A388CB40067074C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07F2A4732A388E4A0067074C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		07F2A4622A388CB20067074C /* Avocado */ = {
 			isa = PBXGroup;
 			children = (
+				07F2A4722A388E3E0067074C /* Utility */,
 				07F2A4632A388CB20067074C /* AvocadoApp.swift */,
 				07F2A4712A388DAB0067074C /* Views */,
 				07F2A4672A388CB40067074C /* Assets.xcassets */,
@@ -73,6 +76,14 @@
 				07F2A4652A388CB20067074C /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		07F2A4722A388E3E0067074C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				07F2A4732A388E4A0067074C /* Extension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F2A4742A388E4A0067074C /* Extension.swift in Sources */,
 				07F2A4662A388CB20067074C /* ContentView.swift in Sources */,
 				07F2A4642A388CB20067074C /* AvocadoApp.swift in Sources */,
 			);
