@@ -17,6 +17,8 @@
 		07F2A47D2A38919B0067074C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A47C2A38919B0067074C /* SettingsView.swift */; };
 		07F2A47F2A3891B10067074C /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A47E2A3891B10067074C /* AppView.swift */; };
 		07F2A4812A3896500067074C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A4802A3896500067074C /* HeaderView.swift */; };
+		07F2A4832A389B2F0067074C /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A4822A389B2F0067074C /* HeaderModel.swift */; };
+		07F2A4852A389B680067074C /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A4842A389B680067074C /* HeaderData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		07F2A47C2A38919B0067074C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		07F2A47E2A3891B10067074C /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		07F2A4802A3896500067074C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		07F2A4822A389B2F0067074C /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
+		07F2A4842A389B680067074C /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		07F2A4762A3891490067074C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				07F2A4842A389B680067074C /* HeaderData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 		07F2A4772A38914F0067074C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				07F2A4822A389B2F0067074C /* HeaderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,12 +196,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F2A4792A3891760067074C /* AvocadosView.swift in Sources */,
+				07F2A4832A389B2F0067074C /* HeaderModel.swift in Sources */,
 				07F2A47B2A3891880067074C /* RipeningStagesView.swift in Sources */,
 				07F2A4742A388E4A0067074C /* Extension.swift in Sources */,
 				07F2A47F2A3891B10067074C /* AppView.swift in Sources */,
 				07F2A47D2A38919B0067074C /* SettingsView.swift in Sources */,
 				07F2A4662A388CB20067074C /* ContentView.swift in Sources */,
 				07F2A4642A388CB20067074C /* AvocadoApp.swift in Sources */,
+				07F2A4852A389B680067074C /* HeaderData.swift in Sources */,
 				07F2A4812A3896500067074C /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
