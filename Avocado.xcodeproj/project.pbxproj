@@ -21,6 +21,8 @@
 		07F2A4852A389B680067074C /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A4842A389B680067074C /* HeaderData.swift */; };
 		07F2A4872A38A0F20067074C /* DishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A4862A38A0F20067074C /* DishesView.swift */; };
 		07F2A4892A39E03A0067074C /* FactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A4882A39E03A0067074C /* FactsView.swift */; };
+		07F2A48B2A39E2800067074C /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A48A2A39E2800067074C /* FactModel.swift */; };
+		07F2A48D2A39E2C20067074C /* FactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A48C2A39E2C20067074C /* FactData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		07F2A4842A389B680067074C /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderData.swift; sourceTree = "<group>"; };
 		07F2A4862A38A0F20067074C /* DishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesView.swift; sourceTree = "<group>"; };
 		07F2A4882A39E03A0067074C /* FactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsView.swift; sourceTree = "<group>"; };
+		07F2A48A2A39E2800067074C /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		07F2A48C2A39E2C20067074C /* FactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				07F2A4842A389B680067074C /* HeaderData.swift */,
+				07F2A48C2A39E2C20067074C /* FactData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				07F2A4822A389B2F0067074C /* HeaderModel.swift */,
+				07F2A48A2A39E2800067074C /* FactModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,12 +209,14 @@
 			files = (
 				07F2A4792A3891760067074C /* AvocadosView.swift in Sources */,
 				07F2A4832A389B2F0067074C /* HeaderModel.swift in Sources */,
+				07F2A48B2A39E2800067074C /* FactModel.swift in Sources */,
 				07F2A47B2A3891880067074C /* RipeningStagesView.swift in Sources */,
 				07F2A4742A388E4A0067074C /* Extension.swift in Sources */,
 				07F2A47F2A3891B10067074C /* AppView.swift in Sources */,
 				07F2A47D2A38919B0067074C /* SettingsView.swift in Sources */,
 				07F2A4662A388CB20067074C /* RecipesView.swift in Sources */,
 				07F2A4642A388CB20067074C /* AvocadoApp.swift in Sources */,
+				07F2A48D2A39E2C20067074C /* FactData.swift in Sources */,
 				07F2A4872A38A0F20067074C /* DishesView.swift in Sources */,
 				07F2A4852A389B680067074C /* HeaderData.swift in Sources */,
 				07F2A4892A39E03A0067074C /* FactsView.swift in Sources */,
