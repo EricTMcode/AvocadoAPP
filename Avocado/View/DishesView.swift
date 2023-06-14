@@ -11,9 +11,7 @@ struct DishesView: View {
     var body: some View {
         HStack(alignment: .center, spacing: 4) {
             ColumnLeft()
-            
             ColumnCenter()
-            
             ColumnRight()
             
         }

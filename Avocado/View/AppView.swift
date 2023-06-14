@@ -15,7 +15,7 @@ struct AppView: View {
                     Image("tabicon-branch")
                     Text("Avocados")
                 }
-            ContentView()
+            RecipesView()
                 .tabItem {
                     Image("tabicon-book")
                     Text("recipes")

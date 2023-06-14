@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RecipesView.swift
 //  Avocado
 //
 //  Created by Eric on 13/06/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct RecipesView: View {
     var headers: [Header] = headersData
     
     var body: some View {
@@ -56,8 +56,8 @@ struct TitleModifier: ViewModifier {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct RecipesView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(headers: headersData)
+        RecipesView(headers: headersData)
     }
 }
