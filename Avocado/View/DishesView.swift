@@ -32,45 +32,6 @@ struct DishesView_Previews: PreviewProvider {
     }
 }
 
-
-struct IconModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .frame(width: 42, height: 42, alignment: .center)
-    }
-}
-
-struct IconView: View {
-    let image: String
-    let text: String
-    let state: State
-    
-    enum State {
-        case left
-        case right
-    }
-    
-    var body: some View {
-        if state == .left {
-            HStack {
-                Image(image)
-                    .resizable()
-                    .modifier(IconModifier())
-                Spacer()
-                Text(text)
-            }
-        } else {
-            HStack {
-                Text(text)
-                Spacer()
-                Image(image)
-                    .resizable()
-                    .modifier(IconModifier())
-            }
-        }
-    }
-}
-
 struct ColumnLeft: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
@@ -113,5 +74,62 @@ struct ColumnCenter: View {
                 Divider()
             }
         }
+    }
+}
+
+struct IconView: View {
+    let image: String
+    let text: String
+    let state: State
+    
+    enum State {
+        case left
+        case right
+    }
+    
+    var body: some View {
+        if state == .left {
+            ImageLeft(image: image, text: text)
+        } else {
+            ImageRight(image: image, text: text)
+        }
+    }
+}
+
+
+struct ImageLeft: View {
+    let image: String
+    let text: String
+    
+    var body: some View {
+        HStack {
+            Image(image)
+                .resizable()
+                .modifier(IconModifier())
+            Spacer()
+            Text(text)
+        }
+    }
+}
+
+struct ImageRight: View {
+    let image: String
+    let text: String
+    
+    var body: some View {
+        HStack {
+            Text(text)
+            Spacer()
+            Image(image)
+                .resizable()
+                .modifier(IconModifier())
+        }
+    }
+}
+
+struct IconModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .frame(width: 42, height: 42, alignment: .center)
     }
 }
