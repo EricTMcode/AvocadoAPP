@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DishesView: View {
     var body: some View {
-        HStack {
+        HStack(alignment: .center, spacing: 4) {
             ColumnLeft()
             
             ColumnCenter()
@@ -32,6 +32,14 @@ struct DishesView_Previews: PreviewProvider {
     }
 }
 
+
+struct IconModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .frame(width: 42, height: 42, alignment: .center)
+    }
+}
+
 struct IconView: View {
     let image: String
     let text: String
@@ -47,7 +55,7 @@ struct IconView: View {
             HStack {
                 Image(image)
                     .resizable()
-                    .frame(width: 42, height: 42, alignment: .center)
+                    .modifier(IconModifier())
                 Spacer()
                 Text(text)
             }
@@ -57,7 +65,7 @@ struct IconView: View {
                 Spacer()
                 Image(image)
                     .resizable()
-                    .frame(width: 42, height: 42, alignment: .center)
+                    .modifier(IconModifier())
             }
         }
     }
@@ -65,7 +73,7 @@ struct IconView: View {
 
 struct ColumnLeft: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 4) {
             IconView(image: "icon-toasts", text: "Toasts", state: .left)
             Divider()
             IconView(image: "icon-tacos", text: "Tacos", state: .left)
@@ -80,7 +88,7 @@ struct ColumnLeft: View {
 
 struct ColumnRight: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .trailing, spacing: 4) {
             IconView(image: "icon-guacamole", text: "Guacamole", state: .right)
             Divider()
             IconView(image: "icon-sandwiches", text: "Sandwich", state: .right)
@@ -94,7 +102,7 @@ struct ColumnRight: View {
 
 struct ColumnCenter: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .center, spacing: 8) {
             HStack {
                 Divider()
             }
