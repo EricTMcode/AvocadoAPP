@@ -1,5 +1,12 @@
-## AvocadoAPP
- 
+## Avocado Recipes 
+
+- Light and Dark Appeances
+- Complex Layouts
+- Scrolling Views
+- Animation with SwiftUI
+- Adaptive Colors & Images
+- App Icons & LaunchScreen
+- Custom View Modifiers (avoiding code repetition)
 
 ## Screenshots
 
