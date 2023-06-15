@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct RipeningView: View {
+    var ripening: Ripening
+    
     @State private var slideInAnimation = false
     
     var body: some View {
         VStack {
-            Image("avocado-ripening-1")
+            Image(ripening.image)
                 .resizable()
                 .frame(width: 100, height: 100, alignment: .center)
                 .clipShape(Circle())
@@ -34,7 +36,7 @@ struct RipeningView: View {
             VStack(alignment: .center, spacing: 10) {
                 // STAGE
                 VStack(alignment: .center, spacing: 0) {
-                    Text("1")
+                    Text(ripening.stage)
                         .font(.system(.largeTitle, design: .serif))
                         .bold()
                     Text("STAGE")
@@ -46,7 +48,7 @@ struct RipeningView: View {
                 .frame(width: 180)
                 
                 // TITLE
-                Text("Hard")
+                Text(ripening.title)
                     .font(.system(.title, design: .serif))
                     .bold()
                     .foregroundColor(.ColorGreenMedium)
@@ -61,14 +63,14 @@ struct RipeningView: View {
                 
                 // DESCRIPTION
                 Spacer()
-                Text("Fresh off the treem the avocado is very hard with no give.")
+                Text(ripening.description)
                     .foregroundColor(.ColorGreenDark)
                     .bold()
                     .lineLimit(nil)
                 Spacer()
                 
                 // RIPENESS
-                Text("5+ DAYS")
+                Text(ripening.ripeness.uppercased())
                     .foregroundColor(.white)
                     .font(.system(.callout, design: .serif))
                     .bold()
@@ -83,7 +85,7 @@ struct RipeningView: View {
                     )
                 
                 // INSTRUCTION
-                Text("Hold avocados at room temperature until they are fully ripe.")
+                Text(ripening.instruction)
                     .font(.footnote)
                     .foregroundColor(.ColorGreenLight)
                     .bold()
@@ -100,13 +102,13 @@ struct RipeningView: View {
         }
         .edgesIgnoringSafeArea(.all)
         .onAppear {
-            slideInAnimation.toggle()
+            slideInAnimation = true
         }
     }
 }
 
 struct RipeningView_Previews: PreviewProvider {
     static var previews: some View {
-        RipeningView()
+        RipeningView(ripening: ripeningData[0])
     }
 }

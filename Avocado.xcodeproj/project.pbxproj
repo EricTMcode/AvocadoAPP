@@ -120,7 +120,6 @@
 				07F2A47E2A3891B10067074C /* AppView.swift */,
 				07F2A4782A3891760067074C /* AvocadosView.swift */,
 				07F2A4652A388CB20067074C /* RecipesView.swift */,
-				07F2A47A2A3891880067074C /* RipeningStagesView.swift */,
 				07F2A47C2A38919B0067074C /* SettingsView.swift */,
 				07F2A4802A3896500067074C /* HeaderView.swift */,
 				07F2A4862A38A0F20067074C /* DishesView.swift */,
@@ -129,6 +128,7 @@
 				07F2A4982A3B29900067074C /* RecipeCookingView.swift */,
 				07F2A4962A3B29140067074C /* RecipeRatingView.swift */,
 				07F2A49A2A3B2A520067074C /* RecipeDetailView.swift */,
+				07F2A47A2A3891880067074C /* RipeningStagesView.swift */,
 				07F2A49C2A3B31940067074C /* RipeningView.swift */,
 			);
 			path = View;
