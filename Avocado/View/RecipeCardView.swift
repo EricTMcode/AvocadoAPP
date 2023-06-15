@@ -56,18 +56,9 @@ struct RecipeCardView: View {
                 
                 // COOKING
                 HStack(alignment: .center, spacing: 12) {
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "person.2")
-                        Text("Serves: \(recipe.serves)")
-                    }
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "clock")
-                        Text("Prep: \(recipe.preparation)")
-                    }
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "flame")
-                        Text("Cooking: \(recipe.cooking)")
-                    }
+                    Cooking(image: "person.2", text: "Serves: \(recipe.serves)")
+                    Cooking(image: "clock", text: "Prep: \(recipe.preparation)")
+                    Cooking(image: "flame", text: "Cooking: \(recipe.cooking)")
                 }
                 .font(.footnote)
                 .foregroundColor(.gray)
@@ -85,5 +76,18 @@ struct RecipeCardView_Previews: PreviewProvider {
     static var previews: some View {
         RecipeCardView(recipe: recipesData[0])
             .previewLayout(.sizeThatFits)
+            .padding()
+    }
+}
+
+struct Cooking: View {
+    let image: String
+    let text: String
+    
+    var body: some View {
+        HStack(alignment: .center, spacing: 2) {
+            Image(systemName: image)
+            Text(text)
+        }
     }
 }
