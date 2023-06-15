@@ -29,6 +29,7 @@
 		07F2A4972A3B29140067074C /* RecipeRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A4962A3B29140067074C /* RecipeRatingView.swift */; };
 		07F2A4992A3B29900067074C /* RecipeCookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A4982A3B29900067074C /* RecipeCookingView.swift */; };
 		07F2A49B2A3B2A520067074C /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A49A2A3B2A520067074C /* RecipeDetailView.swift */; };
+		07F2A49D2A3B31940067074C /* RipeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2A49C2A3B31940067074C /* RipeningView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		07F2A4962A3B29140067074C /* RecipeRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRatingView.swift; sourceTree = "<group>"; };
 		07F2A4982A3B29900067074C /* RecipeCookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCookingView.swift; sourceTree = "<group>"; };
 		07F2A49A2A3B2A520067074C /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		07F2A49C2A3B31940067074C /* RipeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				07F2A4982A3B29900067074C /* RecipeCookingView.swift */,
 				07F2A4962A3B29140067074C /* RecipeRatingView.swift */,
 				07F2A49A2A3B2A520067074C /* RecipeDetailView.swift */,
+				07F2A49C2A3B31940067074C /* RipeningView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				07F2A4642A388CB20067074C /* AvocadoApp.swift in Sources */,
 				07F2A48D2A39E2C20067074C /* FactData.swift in Sources */,
 				07F2A4872A38A0F20067074C /* DishesView.swift in Sources */,
+				07F2A49D2A3B31940067074C /* RipeningView.swift in Sources */,
 				07F2A4852A389B680067074C /* HeaderData.swift in Sources */,
 				07F2A4932A39E7B20067074C /* RecipeData.swift in Sources */,
 				07F2A4892A39E03A0067074C /* FactsView.swift in Sources */,
