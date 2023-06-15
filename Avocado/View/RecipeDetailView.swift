@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RecipeDetailView: View {
     var recipe: Recipe
+    @State private var pulsate = false
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -77,6 +78,30 @@ struct RecipeDetailView: View {
             }
         }
         .edgesIgnoringSafeArea(.top)
+        .overlay(
+            HStack {
+                Spacer()
+                VStack {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "chevron.down.circle.fill")
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .shadow(radius: 4)
+                            .opacity(pulsate ? 1 : 0.6)
+                            .scaleEffect(pulsate ? 1.2 : 0.8, anchor: .center)
+                            .animation(Animation.easeInOut(duration: 1.5).repeatForever(autoreverses: true), value: pulsate)
+                    }
+                    .padding(.trailing, 20)
+                    .padding(.top, 8)
+                    Spacer()
+                }
+            }
+        )
+        .onAppear {
+            pulsate.toggle()
+        }
     }
 }
 
