@@ -10,6 +10,7 @@ import SwiftUI
 struct RecipeDetailView: View {
     var recipe: Recipe
     @State private var pulsate = false
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -83,7 +84,7 @@ struct RecipeDetailView: View {
                 Spacer()
                 VStack {
                     Button {
-                        
+                        dismiss()
                     } label: {
                         Image(systemName: "chevron.down.circle.fill")
                             .font(.title)
@@ -94,7 +95,7 @@ struct RecipeDetailView: View {
                             .animation(Animation.easeInOut(duration: 1.5).repeatForever(autoreverses: true), value: pulsate)
                     }
                     .padding(.trailing, 20)
-                    .padding(.top, 8)
+                    .padding(.top, 24)
                     Spacer()
                 }
             }
